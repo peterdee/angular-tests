@@ -27,7 +27,7 @@ export class TodoService {
   fetchTodos() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve([new TodoModel('This is a simulated Todo', `${new Date()}`)]);
+        resolve([new TodoModel('Totally not a test', 'This is some date')]);
       }, 2500);
     });
   }

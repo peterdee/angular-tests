@@ -2,7 +2,8 @@
   <div>
     <form (onSubmit)="createTodo()">
       <div class="margin">
-        <textarea #quote
+        <textarea
+          #todo
           rows="3"
           cols="25"
           [(ngModel)]="todoText"
@@ -11,6 +12,7 @@
       </div>
         <div>
           <button
+            class="submit-button"
             type="submit"
             (click)="createTodo()"
             [disabled]="todoText == null">
