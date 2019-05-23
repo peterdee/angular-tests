@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+button, textarea {
+  border: none;
+  box-shadow: none;
+  border: 1px solid black;
+  color: black;
+}
+
+textarea {
+  padding: 5px;
+}
+
+button {
+  text-align: center;
+  padding: 5px 15px;
+  background-color: aquamarine;
+}
+
+.margin {
+  margin-bottom: 10px;
+}

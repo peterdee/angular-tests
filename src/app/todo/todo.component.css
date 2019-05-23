@@ -1,0 +1,12 @@
+.new-todo, .todo-item {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.new-todo {
+  background-color: #fcfcfc;
+}
+
+.todo-item {
+  background-color: #bbffee;
+}

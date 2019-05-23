@@ -1,0 +1,39 @@
+<div class="new-todo margin">
+  <div>
+    <form (onSubmit)="createTodo()">
+      <div class="margin">
+        <textarea #quote
+          rows="3"
+          cols="25"
+          [(ngModel)]="todoText"
+          name="todoText">
+        </textarea>
+      </div>
+        <div>
+          <button
+            type="submit"
+            (click)="createTodo()"
+            [disabled]="todoText == null">
+            Add Todo
+          </button>
+        </div>
+    </form>
+  </div>
+</div>
+
+<div>
+  <div
+    class="todo-item margin"
+    id="todo-items"
+    *ngFor="let todo of todoList; let i = index"
+    (click)="removeTodo(i)">
+    <div>
+        {{ todo.text }}
+    </div>
+    <div>
+      <small>
+        Added: {{ todo.timeCreated }}
+      </small>
+    </div>
+  </div>
+</div>
